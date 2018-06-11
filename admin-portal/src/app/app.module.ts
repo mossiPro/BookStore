@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import 'hammerjs';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
@@ -14,7 +14,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
   imports: [
     BrowserModule,
     MatButtonModule, 
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
